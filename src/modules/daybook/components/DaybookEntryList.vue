@@ -8,17 +8,19 @@
             />  
         </div>
         <div class="entry-scrollarea">
-            <h2
+            <Entry
              v-for="item in 100"
-             :key="item">
-             Entry
-            </h2>
+             :key="item"/>
         </div>
     </div>
 </template>
 <script>
-export default {
+import { defineAsyncComponent } from 'vue'
 
+export default {
+    components: {
+        Entry: defineAsyncComponent(() => import('./DaybookEntry.vue'))
+    }
 }
 </script>
 
