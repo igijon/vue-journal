@@ -23,7 +23,8 @@
         <textarea
             placeholder="¿Qué sucedió hoy?"></textarea>
     </div>
-    <Fab />
+    <Fab 
+        icon="fa-save" />
     <img 
         src="https://derastrillosybazares.com/wp-content/uploads/2019/03/Navaluenga_Semana_Santa-6-1060x1060.jpg" 
         alt="entry-picture"
